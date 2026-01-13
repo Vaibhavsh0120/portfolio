@@ -90,10 +90,10 @@ export default function HeroSection() {
                 initial={{ y: 100, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{
-                  delay: 0.2 + index * 0.03,
+                  delay: 0.8 + index * 0.05,
                   type: "spring",
-                  stiffness: 200,
-                  damping: 20,
+                  stiffness: 150,
+                  damping: 25,
                 }}
                 className="inline-block text-transparent bg-clip-text 
                       bg-gradient-to-r from-neutral-900 to-neutral-700/80 
