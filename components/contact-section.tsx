@@ -129,6 +129,7 @@ export default function ContactSection() {
           message: result.error || 'Failed to send message. Please try again.'
         })
       }
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
       setStatus({
         type: 'error',

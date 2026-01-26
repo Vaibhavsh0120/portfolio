@@ -4,38 +4,38 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ExternalLink, Github, Star, Eye } from 'lucide-react'
+import { ExternalLink, Github } from 'lucide-react'
 
 const projects = [
   {
     title: "LifeBeat - Lung Cancer Detection",
-    description: "AI-powered healthcare mobile app using TensorFlow Lite for real-time chest X-ray analysis and early lung cancer detection. Features appointment booking, Firebase integration, and Google Cloud Healthcare API. Recognized as 2nd Runner-Up at HackStreet 2024, demonstrating production-ready healthcare AI solutions.",
+    description: "Healthcare app using TensorFlow Lite for chest X-ray analysis and lung cancer detection. Features appointment booking and aims to become a comprehensive health companion.",
     image: "/images/projects/lifebeat-app.png",
     technologies: ["Kotlin", "XML", "TensorFlow Lite", "Firebase", "Google Cloud Healthcare API"],
-    liveUrl: "https://github.com/Vaibhavsh0120/LifeBeat",
-    githubUrl: "https://github.com/Vaibhavsh0120/LifeBeat",
+    liveUrl: "https://github.com/Vaibhav0120/LifeBeat",
+    githubUrl: "https://github.com/Vaibhav0120/LifeBeat",
     featured: true,
     stats: { stars: "2nd Runner-Up", views: "HackStreet 2024" },
     achievement: "🏆 2nd Runner-Up at HackStreet Hackathon"
   },
   {
     title: "CargoGuardian - IoT Train Management",
-    description: "End-to-end IoT solution for automated train cargo monitoring with real-time weight detection, GPS tracking, anti-theft protection, and role-based access control. Built with Flutter, Firebase, and Blynk IoT platform. Awarded 2nd Runner-Up at HackHiest 2025, showcasing practical IoT implementation for transportation logistics.",
+    description: "Smart IoT-powered system for automated train cargo monitoring with real-time weight detection, GPS tracking, anti-theft protection, and role-based access control.",
     image: "/images/projects/cargoguardian-iot.png",
     technologies: ["Flutter", "Firebase", "Blynk", "IoT Sensors", "Google Maps API"],
-    liveUrl: "https://github.com/Vaibhavsh0120/CargoGuardian_IoT-Based-Train-cargo-managment-system",
-    githubUrl: "https://github.com/Vaibhavsh0120/CargoGuardian_IoT-Based-Train-cargo-managment-system",
+    liveUrl: "https://github.com/Vaibhav0120/CargoGuardian_IoT-Based-Train-cargo-managment-system",
+    githubUrl: "https://github.com/Vaibhav0120/CargoGuardian_IoT-Based-Train-cargo-managment-system",
     featured: true,
     stats: { stars: "2nd Runner-Up", views: "HackHiest 2025" },
     achievement: "🏆 2nd Runner-Up at HackHiest Hackathon 2025"
   },
   {
     title: "SignWave - Sign Language Translator",
-    description: "Production-ready web application bridging communication gaps with real-time AI-powered sign language translation. Features MediaPipe-based Sign to Text recognition and Text to Sign animation with speech synthesis. Deployed on Vercel with Flask backend, demonstrating accessible AI solutions.",
+    description: "Web application bridging communication gaps with AI-powered sign language translation. Features Sign to Text recognition and Text to Sign animation with speech synthesis.",
     image: "/images/projects/signwave-translator.png",
     technologies: ["React", "TypeScript", "Python", "Flask", "TensorFlow", "Computer Vision"],
     liveUrl: "https://sign-wave-gamma.vercel.app/",
-    githubUrl: "https://github.com/Vaibhavsh0120/SignWave",
+    githubUrl: "https://github.com/Vaibhav0120/SignWave",
     featured: false,
     stats: { stars: "🤟 Sign Language", views: "Live Demo" }
   },
@@ -44,18 +44,18 @@ const projects = [
     description: "Flutter app connecting students with cafeteria services, featuring digital ordering, UPI payments via Razorpay, inventory management, and role-based access for staff and students.",
     image: "/images/projects/campus-care-app.png",
     technologies: ["Flutter", "Supabase", "PostgreSQL", "Razorpay", "RLS"],
-    liveUrl: "https://github.com/Vaibhavsh0120/Campus-Care",
-    githubUrl: "https://github.com/Vaibhavsh0120/Campus-Care",
+    liveUrl: "https://github.com/Vaibhav0120/Campus-Care",
+    githubUrl: "https://github.com/Vaibhav0120/Campus-Care",
     featured: false,
     stats: { stars: "💳 UPI Integration", views: "Live Demo" }
   },
   {
     title: "Space Tools AI Detection",
-    description: "Production-grade YOLOv8-based computer vision system detecting critical safety equipment (fire extinguishers, tool boxes, oxygen tanks) in space environments. Achieved 94.2% mAP accuracy with optimized inference. Built for BuildWithIndia 2.0 with integrated Flutter mobile app for real-time detection.",
+    description: "YOLOv8-based computer vision model detecting fire extinguishers, tool boxes, and oxygen tanks in space environments with 94.2% mAP accuracy. Includes Flutter mobile app.",
     image: "/images/projects/space-tools-ai.png",
     technologies: ["YOLOv8", "PyTorch", "ONNX", "Flutter", "Computer Vision"],
-    liveUrl: "https://github.com/Vaibhavsh0120/HackWithDelhi2.0",
-    githubUrl: "https://github.com/Vaibhavsh0120/HackWithDelhi2.0",
+    liveUrl: "https://github.com/Vaibhav0120/HackWithDelhi2.0",
+    githubUrl: "https://github.com/Vaibhav0120/HackWithDelhi2.0",
     featured: false,
     stats: { stars: "94.2% mAP", views: "BuildWithIndia 2.0" }
   },
@@ -65,39 +65,37 @@ const projects = [
     image: "/images/projects/timetable-management.png",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "shadcn/ui"],
     liveUrl: "https://timetable-management-project.vercel.app/",
-    githubUrl: "https://github.com/Vaibhavsh0120/Timetable-Management-Project",
+    githubUrl: "https://github.com/Vaibhav0120/Timetable-Management-Project",
     featured: false,
     stats: { stars: "⚠️ Conflict Detection", views: "Live System" }
   }
 ]
 
 function FloatingShapes() {
-  // Reduced from 8 to 4 shapes for better performance
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {Array.from({ length: 4 }, (_, i) => (
+      {Array.from({ length: 8 }, (_, i) => (
         <motion.div
           key={i}
-          className="absolute will-change-transform"
+          className="absolute"
           style={{
-            left: `${15 + i * 25}%`,
-            top: `${10 + i * 20}%`,
+            left: `${10 + i * 12}%`,
+            top: `${5 + i * 8}%`,
           }}
           animate={{
-            y: [0, -25, 0],
+            y: [0, -30, 0],
             rotate: [0, 180, 360],
-            opacity: [0.08, 0.2, 0.08],
+            opacity: [0.1, 0.3, 0.1],
           }}
           transition={{
-            duration: 10 + i * 3,
+            duration: 8 + i * 2,
             repeat: Number.POSITIVE_INFINITY,
             ease: "easeInOut",
-            repeatType: "loop",
           }}
         >
           <div className={`w-3 h-3 ${i % 2 === 0 ? 'rounded-full' : 'rotate-45'}
-                         bg-gradient-to-r from-neutral-300/20 to-neutral-400/20 
-                         dark:from-neutral-600/20 dark:to-neutral-500/20`} />
+                         bg-gradient-to-r from-neutral-300/30 to-neutral-400/30 
+                         dark:from-neutral-600/30 dark:to-neutral-500/30`} />
         </motion.div>
       ))}
     </div>
@@ -151,19 +149,19 @@ export default function ProjectsSection() {
           {featuredProjects.map((project, index) => (
             <motion.div
               key={project.title}
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8, delay: index * 0.2 }}
+              viewport={{ once: true }}
               className={`grid lg:grid-cols-2 gap-8 md:gap-16 items-center ${
                 index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
               }`}
             >
               <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''} order-1 lg:order-none`}>
                 <div className="relative group">
-                  <div className="absolute -inset-4 bg-gradient-to-r from-neutral-200/30 to-neutral-300/30 
-                                dark:from-neutral-700/30 dark:to-neutral-600/30 rounded-3xl blur-xl 
-                                group-hover:blur-2xl transition-all duration-300 opacity-50" />
+                  <div className="absolute -inset-4 bg-gradient-to-r from-neutral-200/40 to-neutral-300/40 
+                                dark:from-neutral-700/40 dark:to-neutral-600/40 rounded-3xl blur-2xl 
+                                group-hover:blur-3xl transition-all duration-500 opacity-60" />
                   <div className="relative overflow-hidden rounded-2xl shadow-2xl group-hover:shadow-3xl 
                                 transition-shadow duration-500 border border-neutral-200/50 dark:border-neutral-700/50
                                 max-w-2xl mx-auto lg:mx-0">
@@ -172,8 +170,7 @@ export default function ProjectsSection() {
                       alt={project.title}
                       width={800}
                       height={600}
-                      className="w-full h-auto max-h-80 md:max-h-96 lg:max-h-none object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
+                      className="w-full h-auto max-h-80 md:max-h-96 lg:max-h-none object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent 
                                   opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -254,7 +251,7 @@ export default function ProjectsSection() {
                       <Button 
                         variant="outline" 
                         className="flex-1 sm:flex-none border-2 hover:bg-neutral-50 dark:hover:bg-neutral-800/50
-                                 transition-all duration-300 group"
+                                 transition-all duration-300 group bg-transparent"
                         asChild
                       >
                         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
@@ -302,10 +299,10 @@ export default function ProjectsSection() {
             {otherProjects.map((project, index) => (
               <motion.div
                 key={project.title}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.8, delay: index * 0.2 }}
+                viewport={{ once: true }}
                 className="group"
               >
                 <Card className="h-full shadow-xl hover:shadow-2xl transition-all duration-500 
@@ -320,10 +317,9 @@ export default function ProjectsSection() {
                     <Image
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}
-                      width={600}
+                      width={500}
                       height={300}
-                      className="w-full h-40 md:h-48 object-cover group-hover:scale-110 transition-transform duration-500"
-                      loading="lazy"
+                      className="w-full h-40 md:h-48 object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                     <div className="absolute top-4 right-4 flex items-center gap-2 text-xs text-white/80">
                       <div className="flex items-center gap-1 bg-black/20 backdrop-blur-sm rounded-full px-2 py-1">
@@ -361,7 +357,7 @@ export default function ProjectsSection() {
                       <Button 
                         size="sm" 
                         variant="outline" 
-                        className="flex-1 text-xs md:text-sm group/btn hover:bg-neutral-50 dark:hover:bg-neutral-700/50"
+                        className="flex-1 text-xs md:text-sm group/btn hover:bg-neutral-50 dark:hover:bg-neutral-700/50 bg-transparent"
                         asChild
                       >
                         <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
@@ -372,7 +368,7 @@ export default function ProjectsSection() {
                       <Button 
                         size="sm" 
                         variant="outline" 
-                        className="flex-1 text-xs md:text-sm group/btn hover:bg-neutral-50 dark:hover:bg-neutral-700/50"
+                        className="flex-1 text-xs md:text-sm group/btn hover:bg-neutral-50 dark:hover:bg-neutral-700/50 bg-transparent"
                         asChild
                       >
                         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">

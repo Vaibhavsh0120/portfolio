@@ -5,21 +5,20 @@ import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail } from 'lucide-react'
 
 function FloatingPaths({ position }: { position: number }) {
-  // Reduced from 24 to 8 paths for better performance
-  const paths = Array.from({ length: 8 }, (_, i) => ({
+  const paths = Array.from({ length: 24 }, (_, i) => ({
     id: i,
-    d: `M-${380 - i * 15 * position} -${189 + i * 20}C-${
-      380 - i * 15 * position
-    } -${189 + i * 20} -${312 - i * 15 * position} ${216 - i * 20} ${
-      152 - i * 15 * position
-    } ${343 - i * 20}C${616 - i * 15 * position} ${470 - i * 20} ${
-      684 - i * 15 * position
-    } ${875 - i * 20} ${684 - i * 15 * position} ${875 - i * 20}`,
-    width: 0.5 + i * 0.05,
+    d: `M-${380 - i * 5 * position} -${189 + i * 6}C-${
+      380 - i * 5 * position
+    } -${189 + i * 6} -${312 - i * 5 * position} ${216 - i * 6} ${
+      152 - i * 5 * position
+    } ${343 - i * 6}C${616 - i * 5 * position} ${470 - i * 6} ${
+      684 - i * 5 * position
+    } ${875 - i * 6} ${684 - i * 5 * position} ${875 - i * 6}`,
+    width: 0.5 + i * 0.02,
   }))
 
   return (
-    <div className="absolute inset-0 pointer-events-none will-change-transform">
+    <div className="absolute inset-0 pointer-events-none">
       <svg className="w-full h-full text-slate-950 dark:text-white" viewBox="0 0 696 316" fill="none">
         <title>Background Paths</title>
         {paths.map((path) => (
@@ -28,19 +27,18 @@ function FloatingPaths({ position }: { position: number }) {
             d={path.d}
             stroke="currentColor"
             strokeWidth={path.width}
-            strokeOpacity={0.03 + path.id * 0.02}
-            initial={{ pathLength: 0.3, opacity: 0.3 }}
+            strokeOpacity={0.05 + path.id * 0.02}
+            initial={{ pathLength: 0.3, opacity: 0.4 }}
             animate={{
               pathLength: 1,
-              opacity: [0.15, 0.3, 0.15],
+              opacity: [0.2, 0.4, 0.2],
+              pathOffset: [0, 1, 0],
             }}
             transition={{
-              duration: 30 + path.id * 5,
+              duration: 25 + Math.random() * 15,
               repeat: Number.POSITIVE_INFINITY,
               ease: "linear",
-              repeatType: "loop",
             }}
-            style={{ willChange: "pathLength, opacity" }}
           />
         ))}
       </svg>
@@ -63,19 +61,20 @@ export default function HeroSection() {
     <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-white dark:bg-neutral-950">
       <div className="absolute inset-0">
         <FloatingPaths position={1} />
+        <FloatingPaths position={-1} />
       </div>
 
       <div className="relative z-10 container mx-auto px-4 md:px-6 text-center">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 2 }}
           className="max-w-4xl mx-auto"
         >
           <motion.div
-            initial={{ y: 15, opacity: 0 }}
+            initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.5 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
             className="mb-4 md:mb-6"
           >
             <span className="text-xs md:text-sm font-medium text-neutral-600 dark:text-neutral-400 tracking-wider uppercase">
@@ -105,28 +104,28 @@ export default function HeroSection() {
           </h1>
 
           <motion.h2
-            initial={{ y: 15, opacity: 0 }}
+            initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.6, duration: 0.5 }}
+            transition={{ delay: 1.5, duration: 0.8 }}
             className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light mb-6 md:mb-8 text-neutral-600 dark:text-neutral-300"
           >
             {title}
           </motion.h2>
 
           <motion.p
-            initial={{ y: 15, opacity: 0 }}
+            initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.8, duration: 0.5 }}
+            transition={{ delay: 1.8, duration: 0.8 }}
             className="text-base md:text-lg text-neutral-600 dark:text-neutral-400 mb-8 md:mb-12 max-w-2xl mx-auto leading-relaxed px-4 md:px-0"
           >
-            BTech Computer Science student specializing in AI/ML, Full-Stack Development, and Cybersecurity. 
-            Building production-ready solutions with 2 hackathon wins and industry experience at Deecogs Technologies and Cisco.
+            BTech Computer Science student passionate about creating innovative software solutions. 
+            Currently building my expertise through hands-on projects and industry experience.
           </motion.p>
 
           <motion.div
-            initial={{ y: 15, opacity: 0 }}
+            initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 1.0, duration: 0.5 }}
+            transition={{ delay: 2.1, duration: 0.8 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4 mb-12 md:mb-16 px-4 md:px-0"
           >
             <div className="inline-block group relative bg-gradient-to-b from-black/10 to-white/10 
@@ -164,16 +163,16 @@ export default function HeroSection() {
           </motion.div>
 
           <motion.div
-            initial={{ y: 15, opacity: 0 }}
+            initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 1.2, duration: 0.5 }}
+            transition={{ delay: 2.4, duration: 0.8 }}
             className="flex items-center justify-center gap-4 md:gap-6"
           >
             {[
-              { icon: Github, href: "https://github.com/Vaibhavsh0120", label: "GitHub" },
+              { icon: Github, href: "https://github.com/Vaibhav0120", label: "GitHub" },
               { icon: Linkedin, href: "https://www.linkedin.com/in/vaibhavsh0120", label: "LinkedIn" },
               { icon: Mail, href: "mailto:vaibhavsh0120@gmail.com", label: "Email" },
-            ].map((social, index) => (
+            ].map((social) => (
               <motion.a
                 key={social.label}
                 href={social.href}
