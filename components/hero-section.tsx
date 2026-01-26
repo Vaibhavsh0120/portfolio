@@ -169,7 +169,7 @@ export default function HeroSection() {
             className="flex items-center justify-center gap-4 md:gap-6"
           >
             {[
-              { icon: Github, href: "https://github.com/Vaibhav0120", label: "GitHub" },
+              { icon: Github, href: "https://github.com/Vaibhavsh0120", label: "GitHub" },
               { icon: Linkedin, href: "https://www.linkedin.com/in/vaibhavsh0120", label: "LinkedIn" },
               { icon: Mail, href: "mailto:vaibhavsh0120@gmail.com", label: "Email" },
             ].map((social) => (

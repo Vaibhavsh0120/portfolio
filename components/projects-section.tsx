@@ -12,8 +12,8 @@ const projects = [
     description: "Healthcare app using TensorFlow Lite for chest X-ray analysis and lung cancer detection. Features appointment booking and aims to become a comprehensive health companion.",
     image: "/images/projects/lifebeat-app.png",
     technologies: ["Kotlin", "XML", "TensorFlow Lite", "Firebase", "Google Cloud Healthcare API"],
-    liveUrl: "https://github.com/Vaibhav0120/LifeBeat",
-    githubUrl: "https://github.com/Vaibhav0120/LifeBeat",
+    liveUrl: "https://github.com/Vaibhavsh0120/LifeBeat",
+    githubUrl: "https://github.com/Vaibhavsh0120/LifeBeat",
     featured: true,
     stats: { stars: "2nd Runner-Up", views: "HackStreet 2024" },
     achievement: "🏆 2nd Runner-Up at HackStreet Hackathon"
@@ -23,8 +23,8 @@ const projects = [
     description: "Smart IoT-powered system for automated train cargo monitoring with real-time weight detection, GPS tracking, anti-theft protection, and role-based access control.",
     image: "/images/projects/cargoguardian-iot.png",
     technologies: ["Flutter", "Firebase", "Blynk", "IoT Sensors", "Google Maps API"],
-    liveUrl: "https://github.com/Vaibhav0120/CargoGuardian_IoT-Based-Train-cargo-managment-system",
-    githubUrl: "https://github.com/Vaibhav0120/CargoGuardian_IoT-Based-Train-cargo-managment-system",
+    liveUrl: "https://github.com/Vaibhavsh0120/CargoGuardian_IoT-Based-Train-cargo-managment-system",
+    githubUrl: "https://github.com/Vaibhavsh0120/CargoGuardian_IoT-Based-Train-cargo-managment-system",
     featured: true,
     stats: { stars: "2nd Runner-Up", views: "HackHiest 2025" },
     achievement: "🏆 2nd Runner-Up at HackHiest Hackathon 2025"
@@ -35,7 +35,7 @@ const projects = [
     image: "/images/projects/signwave-translator.png",
     technologies: ["React", "TypeScript", "Python", "Flask", "TensorFlow", "Computer Vision"],
     liveUrl: "https://sign-wave-gamma.vercel.app/",
-    githubUrl: "https://github.com/Vaibhav0120/SignWave",
+    githubUrl: "https://github.com/Vaibhavsh0120/SignWave",
     featured: false,
     stats: { stars: "🤟 Sign Language", views: "Live Demo" }
   },
@@ -44,8 +44,8 @@ const projects = [
     description: "Flutter app connecting students with cafeteria services, featuring digital ordering, UPI payments via Razorpay, inventory management, and role-based access for staff and students.",
     image: "/images/projects/campus-care-app.png",
     technologies: ["Flutter", "Supabase", "PostgreSQL", "Razorpay", "RLS"],
-    liveUrl: "https://github.com/Vaibhav0120/Campus-Care",
-    githubUrl: "https://github.com/Vaibhav0120/Campus-Care",
+    liveUrl: "https://github.com/Vaibhavsh0120/Campus-Care",
+    githubUrl: "https://github.com/Vaibhavsh0120/Campus-Care",
     featured: false,
     stats: { stars: "💳 UPI Integration", views: "Live Demo" }
   },
@@ -54,8 +54,8 @@ const projects = [
     description: "YOLOv8-based computer vision model detecting fire extinguishers, tool boxes, and oxygen tanks in space environments with 94.2% mAP accuracy. Includes Flutter mobile app.",
     image: "/images/projects/space-tools-ai.png",
     technologies: ["YOLOv8", "PyTorch", "ONNX", "Flutter", "Computer Vision"],
-    liveUrl: "https://github.com/Vaibhav0120/HackWithDelhi2.0",
-    githubUrl: "https://github.com/Vaibhav0120/HackWithDelhi2.0",
+    liveUrl: "https://github.com/Vaibhavsh0120/HackWithDelhi2.0",
+    githubUrl: "https://github.com/Vaibhavsh0120/HackWithDelhi2.0",
     featured: false,
     stats: { stars: "94.2% mAP", views: "BuildWithIndia 2.0" }
   },
@@ -65,7 +65,7 @@ const projects = [
     image: "/images/projects/timetable-management.png",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "shadcn/ui"],
     liveUrl: "https://timetable-management-project.vercel.app/",
-    githubUrl: "https://github.com/Vaibhav0120/Timetable-Management-Project",
+    githubUrl: "https://github.com/Vaibhavsh0120/Timetable-Management-Project",
     featured: false,
     stats: { stars: "⚠️ Conflict Detection", views: "Live System" }
   }
