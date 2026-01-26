@@ -19,7 +19,7 @@ Built with cutting-edge technologies for a smooth user experience, high performa
 ## 🚀 Live Demo
 
 <p align="center">
-  <a href="vaibhavsh0120.vercel.app/">
+  <a href="https://vaibhavsh0120.vercel.app/">
     <img src="https://img.shields.io/badge/🚀%20Live%20Portfolio-1f1f1f?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Portfolio">
   </a>
   <br>
